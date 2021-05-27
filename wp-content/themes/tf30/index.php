@@ -11,7 +11,7 @@
 
 				<a href="#" class="pickup-item">
 					<div class="pickup-item-img">
-						<img src="img/pickup1.png" alt="">
+						<img src="<?php echo get_template_directory_uri() ?>/img/pickup1.png" alt="">
 						<div class="pickup-item-tag">カテゴリ名</div><!-- /pickup-item-tag -->
 					</div><!-- /pickup-item-img -->
 					<div class="pickup-item-body">
@@ -21,7 +21,7 @@
 
 				<a href="#" class="pickup-item">
 					<div class="pickup-item-img">
-						<img src="img/pickup2.png" alt="">
+						<img src="<?php echo get_template_directory_uri() ?>/img/pickup2.png" alt="">
 						<div class="pickup-item-tag">カテゴリ名</div><!-- /pickup-item-tag -->
 					</div><!-- /pickup-item-img -->
 					<div class="pickup-item-body">
@@ -31,7 +31,7 @@
 
 				<a href="#" class="pickup-item">
 					<div class="pickup-item-img">
-						<img src="img/pickup3.png" alt="">
+						<img src="<?php echo get_template_directory_uri() ?>/img/pickup3.png" alt="">
 						<div class="pickup-item-tag">カテゴリ名</div><!-- /pickup-item-tag -->
 					</div><!-- /pickup-item-img -->
 					<div class="pickup-item-body">
@@ -59,7 +59,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry1.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry1.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -79,7 +79,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry2.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry2.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -99,7 +99,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry3.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry3.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -119,7 +119,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry4.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry4.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -139,7 +139,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry5.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry5.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -159,7 +159,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry6.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry6.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -179,7 +179,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry7.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry7.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -199,7 +199,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry8.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry8.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -219,7 +219,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry9.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry9.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -239,7 +239,7 @@
 					<a href="#" class="entry-item">
 						<!-- entry-item-img -->
 						<div class="entry-item-img">
-							<img src="img/entry10.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/img/entry10.png" alt="">
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -275,7 +275,7 @@
 					<div class="widget-title">プロフィール</div>
 
 					<div class="wprofile">
-						<div class="wprofile-img"><img src="img/profile.png" alt=""></div>
+						<div class="wprofile-img"><img src="<?php echo get_template_directory_uri() ?>/img/profile.png" alt=""></div>
 						<div class="wprofile-content">
 							<p>
 								テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -313,7 +313,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry2.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry2.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -321,7 +321,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry1.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry1.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -329,7 +329,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry3.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry3.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -337,7 +337,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry4.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry4.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -345,7 +345,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry5.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry5.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -364,7 +364,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry7.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry7.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -372,7 +372,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry6.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry6.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -380,7 +380,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry10.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry10.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -388,7 +388,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry7.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry7.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
@@ -396,7 +396,7 @@
 
 						<!-- wpost-item -->
 						<a class="wpost-item" href="#">
-							<div class="wpost-item-img"><img src="img/entry9.png" alt=""></div>
+							<div class="wpost-item-img"><img src="<?php echo get_template_directory_uri() ?>/img/entry9.png" alt=""></div>
 							<div class="wpost-item-body">
 								<div class="wpost-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div>
 							</div><!-- /wpost-item-body -->
