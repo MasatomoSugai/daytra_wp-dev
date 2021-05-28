@@ -31,9 +31,6 @@
 	<header id="header">
 		<div class="inner">
 
-			<!-- <h1 class="header-logo"><a href="/">TF-30</a></h1>/header-logo -->
-			<!-- <div class="header-sub">サブタイトルが入りますサブタイトルが入ります</div>/header-sub -->
-
       <?php if (is_home() || is_front_page() ) : //トップページではロゴをh1に、それ以外のページではdivに。 ?>
         <h1 class="header-logo"><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo bloginfo('name'); ?></a></h1> <!-- /header-logo -->
       <?php else : ?>
@@ -71,12 +68,16 @@
 	<!-- header-nav -->
 	<nav class="header-nav">
 		<div class="inner">
-			<ul class="header-list">
-				<li class="m_icon1 menu-item"><a href="#">メニュー1</a></li>
-				<li class="m_icon2 menu-item"><a href="#">メニュー2</a></li>
-				<li class="m_icon3 menu-item"><a href="#">メニュー3</a></li>
-				<li class="m_icon4 menu-item"><a href="#">メニュー4</a></li>
-				<li class="m_icon5 menu-item"><a href="#">メニュー5</a></li>
-			</ul>
+        <?php  
+          wp_nav_menu(
+            //.header-listwp置き換えて、PC用メニューを動的に表示する
+            array(
+              'depth' => 1,
+              'theme_location' => 'global', //グローバルメニューをここに表示すると指定
+              'container' => 'false',
+              'menu_class' => 'header-list',
+            )
+          );
+        ?>
 		</div><!-- /inner -->
 	</nav><!-- header-nav -->
