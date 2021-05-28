@@ -50,15 +50,18 @@
 
 				<!-- drawer-content -->
 				<div class="drawer-content">
-					<nav class="drawer-nav">
-						<ul class="drawer-list">
-							<li class="m_icon1 menu-item"><a href="#">メニュー1</a></li>
-							<li class="m_icon2 menu-item"><a href="#">メニュー2</a></li>
-							<li class="m_icon3 menu-item"><a href="#">メニュー3</a></li>
-							<li class="m_icon4 menu-item"><a href="#">メニュー4</a></li>
-							<li class="m_icon5 menu-item"><a href="#">メニュー5</a></li>
-						</ul>
-					</nav>
+        <?php
+          //.drawer-navを置き換えてスマホ用メニュを動的に表現する
+          wp_nav_menu(
+            array(
+              'depth' => 1,
+              'theme_location' => 'drawer', //ドロワーメニュをここに表示すると指定
+              'container' => 'nav',
+              'container_class' => 'drawer-nav',
+              'menu_class' => 'drawer-list',
+            )
+          );
+        ?>
 				</div><!-- /drawer-content -->
 			</div><!-- /drawer -->
 
