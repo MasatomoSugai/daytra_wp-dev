@@ -10,22 +10,15 @@
 
 				<!-- breadcrumb -->
 				<div class="breadcrumb">
-					<span property="itemListElement" typeof="ListItem">
-						<a property="item" typeof="WebPage" href="/" class="home"><span property="name">ホーム</span></a>
-						<meta property="position" content="1">
-					</span>
-					<i class="fas fa-angle-right"></i>
-					<span class="current-item">カテゴリー名</span>
+          <?php bcn_display(); //BreadcrumbNavXTのパンクずを表示するっための記述 ?>
 				</div><!-- /breadcrumb -->
 
 
 				<div class="archive-head m_description">
 					<div class="archive-lead">ARCHIVE</div>
-					<h1 class="archive-title m_category">カテゴリー名</h1><!-- /archive-title -->
+					<h1 class="archive-title m_category"><?php the_archive_title(); //一覧ページ名を表示 ?></h1><!-- /archive-title -->
 					<div class="archive-description">
-						<p>
-							カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明カテゴリーの説明
-						</p>
+						<p><?php the_archive_description(); //説明を表示 ?></p>
 					</div><!-- /archive-description -->
 				</div><!-- /archive-head -->
 
