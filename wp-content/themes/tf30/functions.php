@@ -53,6 +53,7 @@ function my_menu_init()
   register_nav_menus(
     array(
       'global' => 'ヘッダーメニュー',
+      'footer' => 'フッターメニュー',
       'drawer' => 'ドロワーメニュー',
     )
   );
