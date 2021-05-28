@@ -60,5 +60,40 @@ function my_menu_init()
 }
 add_action('init', 'my_menu_init');
 
+/**
+* アーカイブタイトル書き換え
+*
+* @param string $title 書き換え前のタイトル.
+* @return string $title 書き換え後のタイトル.
+*/
+
+function my_archive_title($title) {
+  if ( is_category()) {
+    $title = single_cat_title('', false);
+  } elseif ( is_tag() ) {
+    $title = single_tag_title('', false);
+  } elseif ( is_post_type_archive() ) {
+    $title = post_type_archive_title('', false);
+  } elseif ( is_tax() ) {
+    $title = single_term_title('', false);
+  } elseif ( is_author() ) {
+    $title = get_the_author();
+  } elseif ( is_date() ) {
+    $title = '';
+    if ( get_query_var('year') ) {
+      $title .= get_query_var('year') . '年';
+    }
+    if ( get_query_var('monthnum')) {
+      $title .= get_query_var('monthnum') . '月';
+    }
+    if ( get_query_var('day')) {
+      $title .= get_query_var('day') . '日';
+    }
+  }
+  return $title;
+};
+add_filter('get_the_archive_title', 'my_archive_title');
+
+
 
 ?>
