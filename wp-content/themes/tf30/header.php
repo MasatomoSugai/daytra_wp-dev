@@ -31,8 +31,15 @@
 	<header id="header">
 		<div class="inner">
 
-			<h1 class="header-logo"><a href="/">TF-30</a></h1><!-- /header-logo -->
-			<div class="header-sub">サブタイトルが入りますサブタイトルが入ります</div><!-- /header-sub -->
+			<!-- <h1 class="header-logo"><a href="/">TF-30</a></h1>/header-logo -->
+			<!-- <div class="header-sub">サブタイトルが入りますサブタイトルが入ります</div>/header-sub -->
+
+      <?php if (is_home() || is_front_page() ) : //トップページではロゴをh1に、それ以外のページではdivに。 ?>
+        <h1 class="header-logo"><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo bloginfo('name'); ?></a></h1> <!-- /header-logo -->
+      <?php else : ?>
+        <div class="header-logo"><a href=" <?php echo esc_url(home_url('/')); ?> "><?php echo bloginfo('name'); ?></a></div> <!-- /header-logo -->
+      <?php endif; ?>
+        <div class="header-sub"><?php bloginfo('description'); //ブログのdescriptionを表示 ?></div> <!-- /header-sub -->
 
 			<!-- drawer -->
 			<div class="drawer">
