@@ -117,26 +117,5 @@
 		</div><!-- /inner -->
 	</div><!-- /content -->
 
-	<!-- footer-menu -->
-	<div id="footer-menu">
-		<div class="inner">
-			<div class="footer-logo"><a href="/">TF-30</a></div><!-- /footer-logo -->
-			<div class="footer-sub">サブタイトルが入りますサブタイトルが入ります</div><!-- /footer-sub -->
-
-			<nav class="footer-nav">
-          <?php
-            wp_nav_menu(
-              array(
-                'depth' => 1,
-                'theme_location' => 'footer',
-                'container' => 'false',
-                'menu_class' => 'footer-list',
-              )
-            );
-          ?>
-			</nav>
-		</div><!-- /inner -->
-	</div><!-- /footer-menu -->
-
 <?php get_footer(); ?>
 
