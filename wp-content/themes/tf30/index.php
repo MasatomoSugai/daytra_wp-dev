@@ -70,7 +70,6 @@
                   echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png"  alt="">'; 
                   }
                 ?>
-							<!-- <img src="<?php echo get_template_directory_uri() ?>/img/entry1.png" alt=""> -->
 						</div><!-- /entry-item-img -->
 
 						<!-- entry-item-body -->
@@ -82,7 +81,6 @@
                     echo '<div class="entry-item-tag">' . $category[0]->cat_name . '</div><!-- /entry-item-tag -->';
                   }
                 ?>
-								<!-- <div class="entry-item-tag">カテゴリ名</div>/entry-item-tag -->
 								<time class="entry-item-published" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j') ?></time><!-- /entry-item-published -->
 							</div><!-- /entry-item-meta -->
 							<h2 class="entry-item-title"><?php the_title(); ?></h2><!-- /entry-item-title -->
@@ -91,12 +89,11 @@
 							</div><!-- /entry-item-excerpt -->
 						</div><!-- /entry-item-body -->
 					</a><!-- /entry-item -->
-
           <?php endwhile; ?>
 				</div><!-- /entries -->
-        <?php endif; ?>
+      <?php endif; ?>
 
-        <?php if (paginate_links()): ?>
+      <?php if (paginate_links()): ?>
 				<!-- pagenation -->
 				<div class="pagenation">
           <?php
@@ -111,7 +108,7 @@
               );
           ?>
 				</div><!-- /pagenation -->
-        <?php endif; ?>
+      <?php endif; ?>
 
 			</main><!-- /primary -->
 
