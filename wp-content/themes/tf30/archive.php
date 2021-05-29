@@ -8,10 +8,12 @@
 			<!-- primary -->
 			<main id="primary">
 
+      <?php if ( function_exists( 'bcn_display' ) ) : ?>
 				<!-- breadcrumb -->
 				<div class="breadcrumb">
           <?php bcn_display(); //BreadcrumbNavXTのパンクずを表示するっための記述 ?>
 				</div><!-- /breadcrumb -->
+        <?php endif; ?>
 
 
 				<div class="archive-head m_description">
