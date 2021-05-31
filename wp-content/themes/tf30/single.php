@@ -38,9 +38,10 @@
 
 						<!-- entry-img -->
 						<div class="entry-img">
-							<img src="img/entry1.png" alt="">
+              <?php if (has_post_thumbnail()) {
+                the_post_thumbnail('large');
+            } ?>
 						</div><!-- /entry-img -->
-
 					</div><!-- /entry-header -->
 
 					<!-- entry-body -->
