@@ -30,8 +30,10 @@
 
 						<!-- entry-meta -->
 						<div class="entry-meta">
-							<time class="entry-published" datetime="2019-01-01">公開日 2019/1/1</time>
-							<time class="entry-updated" datetime="2019-04-01">最終更新日 2019/4/1</time>
+							<time class="entry-published" datetime="<?php the_time('c'); ?>">公開日 <?php the_time('Y/n/j'); ?></time>
+              <?php if(get_the_modified_time('Y-m-d') !== get_the_time('Y-m-d')): ?>
+                <time class="entry-updated" datetime="<?php the_modified_time('c'); ?>">最終更新日 <?php the_modified_time('Y/n/j'); ?></time>
+              <?php endif; ?>
 						</div><!-- /entry-meta -->
 
 						<!-- entry-img -->
