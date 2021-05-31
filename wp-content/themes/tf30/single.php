@@ -21,8 +21,12 @@
 
 					<!-- entry-header -->
 					<div class="entry-header">
-						<div class="entry-label"><a href="#">カテゴリ名</a></div><!-- /entry-item-tag -->
-						<h1 class="entry-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</h1><!-- /entry-title -->
+            <?php  
+              $category = get_the_category();
+              if ( $category[0] ) : ?>
+                <div class="entry-label"><a href="<?php echo esc_url(get_category_link($category[0]->term_id)); ?>"><?php echo $category[0]->cat_name; ?></a></div><!-- /entry-item-tag -->
+						<?php endif; ?>
+            <h1 class="entry-title"><?php the_title(); ?></h1><!-- /entry-title -->
 
 						<!-- entry-meta -->
 						<div class="entry-meta">
