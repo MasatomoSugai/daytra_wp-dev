@@ -1780,6 +1780,10 @@ select:focus {
 	opacity: 1;
 }
 
+.footer-inner {
+	margin-bottom: 70px;
+}
+
 #footer-menu {
 	background: #868686;
 }
@@ -1853,7 +1857,7 @@ select:focus {
 .footer-sns {
 	background: #fff;
 	border-top: 1px solid #e2e2e2;
-	bottom: -75px;
+	bottom: 0px;
 	left: 0;
 	position: fixed;
 	transition: all 0.3s ease 0s;
@@ -2435,7 +2439,7 @@ body.m_fixed_sns {
 }
 
 .footer-sns {
-	bottom: -67px;
+	bottom: 0px;
 }
 
 .footer-sns > .inner {
