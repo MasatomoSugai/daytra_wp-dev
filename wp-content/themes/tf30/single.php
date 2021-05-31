@@ -85,41 +85,6 @@
 								<div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
 							</a><!-- /related-item -->
 
-							<a class="related-item" href="">
-								<div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
-								<div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
-							</a><!-- /related-item -->
-
-							<a class="related-item" href="">
-								<div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
-								<div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
-							</a><!-- /related-item -->
-
-							<a class="related-item" href="">
-								<div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
-								<div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
-							</a><!-- /related-item -->
-
-							<a class="related-item" href="">
-								<div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
-								<div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
-							</a><!-- /related-item -->
-
-							<a class="related-item" href="">
-								<div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
-								<div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
-							</a><!-- /related-item -->
-
-							<a class="related-item" href="">
-								<div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
-								<div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
-							</a><!-- /related-item -->
-
-							<a class="related-item" href="">
-								<div class="related-item-img"><img src="img/entry1.png" alt=""></div><!-- /related-item-img -->
-								<div class="related-item-title">記事のタイトルが入ります記事のタイトルが入ります記事のタイトルが入ります</div><!-- /related-item-title -->
-							</a><!-- /related-item -->
-
 						</div><!-- /related-items -->
 					</div><!-- /entry-related -->
 
