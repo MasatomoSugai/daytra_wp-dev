@@ -21,11 +21,9 @@
 
 					<!-- entry-header -->
 					<div class="entry-header">
-            <?php  
-              $category = get_the_category();
-              if ( $category[0] ) : ?>
-                <div class="entry-label"><a href="<?php echo esc_url(get_category_link($category[0]->term_id)); ?>"><?php echo $category[0]->cat_name; ?></a></div><!-- /entry-item-tag -->
-						<?php endif; ?>
+            <!-- POSTの所属するカテゴリーを表示 -->
+            <div class="entry-label"><?php my_the_post_category(true); ?></div>
+
             <h1 class="entry-title"><?php the_title(); ?></h1><!-- /entry-title -->
 
 						<!-- entry-meta -->
