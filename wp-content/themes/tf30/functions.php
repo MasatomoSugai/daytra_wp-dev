@@ -126,5 +126,33 @@ function my_the_post_category($anchor = true, $id = 0) {
   }
 }
 
+// タグ取得の関数
+
+/**
+* タグ取得
+*
+* @param integer $id 投稿id.
+* @return void
+*/
+
+function my_get_post_tags($id =0) {
+  global $post;
+  // 引数が渡されなければ投稿IDをみるように設定
+  if (0 === $id) {
+    $id = $post->ID;
+  }
+
+  // タグ一覧を取得
+  $tags = get_the_tags($id);
+  
+
+  if ($tags) {
+    foreach ($tags as $tag) {
+      echo '<div class="entry-tag-item"><a href="' . esc_url(get_tag_link($tag->term_id)) . '">'. esc_html($tag->name) . '</a></div><!-- /entry-tag-item -->';
+    }
+  }
+}
+
+
 
 ?>
