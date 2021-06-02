@@ -99,5 +99,60 @@ function my_archive_title($title) {
 };
 add_filter('get_the_archive_title', 'my_archive_title');
 
+/**
+* カテゴリーを1つだけ表示
+*
+* @param boolean $anchor aタグで出力するかどうか.
+* @param integer $id 投稿id.
+* @return void
+*/
+
+
+function my_the_post_category($anchor = true, $id = 0) {
+  global $post;
+  //引数が渡されなければ投稿IDをみるように設定
+  if ( 0 === $id) {
+    $id = $post->ID;
+  }
+
+  //カテゴリー一覧を取得
+  $this_categories = get_the_category($id);
+  if ($this_categories[0]) {
+    if ( $anchor ) {
+      echo '<a href="' . esc_url(get_category_link( $this_categories[0]->term_id )).'">' . esc_html($this_categories[0]->cat_name). '</a>';
+    } else {
+      echo esc_html($this_categories[0]->cat_name);
+    }
+  }
+}
+
+// タグ取得の関数
+
+/**
+* タグ取得
+*
+* @param integer $id 投稿id.
+* @return void
+*/
+
+function my_get_post_tags($id =0) {
+  global $post;
+  // 引数が渡されなければ投稿IDをみるように設定
+  if (0 === $id) {
+    $id = $post->ID;
+  }
+
+  // タグ一覧を取得
+  $tags = get_the_tags($id);
+  
+
+  if ($tags) {
+    foreach ($tags as $tag) {
+      echo '<div class="entry-tag-item"><a href="' . esc_url(get_tag_link($tag->term_id)) . '">'. esc_html($tag->name) . '</a></div><!-- /entry-tag-item -->';
+    }
+  }
+}
+
+
 
 ?>
