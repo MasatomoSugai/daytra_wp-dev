@@ -228,5 +228,27 @@ function set_post_views() {
 add_action('template_redirect', 'set_post_views', 10);
 
 
+/**
+* 検索結果から固定ページを除外する
+
+* @param string $search SQLのWHERE句の検索条件文
+
+* @param object $wp_query WP_Queryのオブジェクト
+
+* @return string $search 条件追加後の検索条件文
+
+*/
+
+function my_posts_search($search, $wp_query) {
+
+  if ($wp_query->is_search() && $wp_query->is_main_query() &&!is_admin()){
+
+    $search .= " AND post_type = 'post' ";
+    return $search;
+  }
+  return $search;
+}
+
+add_filter('posts_search', 'my_posts_search', 10,2);
 
 ?>
