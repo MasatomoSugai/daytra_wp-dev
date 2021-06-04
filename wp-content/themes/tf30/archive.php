@@ -45,7 +45,7 @@
 						<div class="entry-item-body">
 							<div class="entry-item-meta">
 								<!-- trueを引数として渡すとリンク付き、falseを渡すとリンクなし -->
-								c<div class="entry-item-tag"><?php my_the_post_category( false ); ?></div><!--/entry-item-tag -->
+								<div class="entry-item-tag"><?php my_the_post_category( false ); ?></div><!--/entry-item-tag -->
 
 								<time class="entry-item-published" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j') ?></time><!-- /entry-item-published -->
 							</div><!-- /entry-item-meta -->
