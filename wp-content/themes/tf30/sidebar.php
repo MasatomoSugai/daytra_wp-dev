@@ -80,4 +80,42 @@
 
     </div><!-- /wpost-items -->
 </div><!-- /widget_popular -->
+
+<!-- widget_recent -->
+<div class="widget widget_recent">
+  <div class="widget-title">新着記事</div>
+
+  <div class="wpost-items">
+    <?php  
+      $args = array(
+        'post_type' => 'post',
+        'post_per_page' => 5,
+        'orderby' => 'date',
+        'order' => 'DESC',
+      );
+      $new_posts = get_posts($args);
+      foreach($new_posts as $post) : setup_postdata($post);
+    ?>
+
+      <!-- wpost-item -->
+    <a href="<?php the_permalink(); ?>" class="wpost-item">
+      <div class="wpost-item-img">
+        <?php  
+          if (has_post_thumbnail()){
+            the_post_thumbnail('medium');
+          } else {
+            echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+          }
+        ?>
+      </div>
+      <div class="wpost-item-body">
+        <div class="wpost-item-title"><?php the_title(); ?></div>
+      </div>
+  </a>
+
+  <?php endforeach; wp_reset_postdata(); ?>
+
+  </div>
+</div>
+
 </aside><!-- secondary -->
