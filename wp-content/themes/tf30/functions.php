@@ -240,9 +240,9 @@ add_action('template_redirect', 'set_post_views', 10);
 */
 
 function my_posts_search($search, $wp_query) {
-
+//検索結果ページ・メインクエリ・管理画面以外の3つの条件が揃った場合
   if ($wp_query->is_search() && $wp_query->is_main_query() &&!is_admin()){
-
+     // 検索結果を投稿タイプに絞る
     $search .= " AND post_type = 'post' ";
     return $search;
   }
