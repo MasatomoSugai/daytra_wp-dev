@@ -118,4 +118,14 @@
   </div>
 </div>
 
+<!-- widget_archive -->
+<div class="widget widget_archive">
+  <div class="widget-title">アーカイブ</div>
+  <ul>
+    <?php 
+      
+    wp_get_archives($args); ?>
+  </ul>
+</div>
+
 </aside><!-- secondary -->
