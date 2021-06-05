@@ -1,0 +1,1 @@
+<?php echo do_shortcode('[btn link="http://localhost:8888/daytra_wp-dev/contact/"]お問い合わせはこちら[/btn]'); ?>
