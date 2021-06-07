@@ -59,6 +59,8 @@
                 )
               );
             ?>
+            <?php get_template_part('template-parts/single-footer-contact') ?>
+
 					</div><!-- /entry-body -->
 
 
