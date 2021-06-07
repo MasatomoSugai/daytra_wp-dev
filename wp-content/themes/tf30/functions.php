@@ -272,4 +272,11 @@ function my_shortcode($atts, $content = '') {
 add_shortcode('btn', 'my_shortcode');
 
 
+// highlight.jsのショートコーど
+
+function highlight_shortcode($class, $content = '') {
+  return '<pre><code class="' . $class['class'] . '" >' . $content . '</code></pre>';
+}
+add_shortcode('highlight', 'highlight_shortcode');
+
 ?>
