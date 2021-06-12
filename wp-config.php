@@ -20,8 +20,6 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_CACHE', true);
-define( 'WPCACHEHOME', '/Users/user/projects/daytra/php_mamp/daytra_wp-dev/wp-content/plugins/wp-super-cache/' );
 define( 'DB_NAME', 'daytra_wp-dev' );
 
 /** MySQL database username */
