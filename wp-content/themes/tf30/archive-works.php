@@ -67,7 +67,13 @@
                 <div class="entry-item-tag"><?php echo esc_html(get_the_terms(get_the_ID(), 'genre')[0]->name); ?></div>
               </div>
               <h2 class="entry-item-title"><?php the_title(); ?></h2>
-              <div class="entry-item-excerpt">ここに抜粋が入ります</div>
+              <div class="entry-item-excerpt">
+                <?php
+                  $overview = get_field('overview'); 
+                  echo esc_html(mb_substr($overview, 0, 40, "UTF-8"));
+                ?>
+
+              </div>
               <?php 
 
               ?>
